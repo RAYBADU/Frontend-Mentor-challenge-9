@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Logo -->
+    <div class="flex justify-center mt-10">
+      <img src="logo.svg" alt="" class="" />
+    </div>
+    <div class="flex justify-center">
+      <p
+        class="text-gray-400  mt-5 text-[clamp(30px,5vw,40px)] gap-4"
+      >
+        We are launching <strong class="text-black">soon!</strong>
+      </p>
+    </div>
+    <div class="flex justify-center">
+      <p class="mt-2 text-lg max-sm:text-sm text-[clamp(16px,1vw,25px)]">
+        Subscribe and get notified
+      </p>
+    </div>
+    <!-- Form -->
+    <div
+      class="form flex justify-center items-center space-x-5 max-sm:block max-sm:justify-center place-items-center max-sm:grid max-sm:container max-sm:mx-auto"
+    >
+      <input
+        id="input"
+        type="email"
+        required
+        placeholder="Your email address"
+        class="outline-none border rounded-full mt-5 px-25 py-3 w-sm max-sm:w-90"
+      />
+      <button
+        type="submit"
+        id="btn"
+        class="bg-blue-500 px-8 py-3 mt-4 rounded-full text-white cursor-pointer transition hover:opacity-[0.8] shadow-lg max-sm:w-90"
+      >
+        Notify Me
+      </button>
+    </div>
+    <div class="flex justify-center mt-5">
+      <p id="text" class="hidden text-red-400">
+        Please enter a valid email address
+      </p>
+    </div>
+    <!-- Dashboard -->
+    <div class="flex justify-center">
+      <img
+        src="illustration-dashboard.png"
+        class="w-190 max-sm:w-140 mt-5 py-5"
+        alt=""
+      />
+    </div>
+
+    <div class="icons text-blue-500 flex justify-center space-x-3">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+    </div>
+
+    <div class="flex justify-center text-gray-400 py-2">
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
